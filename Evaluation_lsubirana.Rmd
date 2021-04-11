@@ -57,7 +57,7 @@ mkdir -p 01_Script 02_Output
 ```
 
 <center>
-![tree](C:/Users\Lucie\Desktop\mini_projet_M4M5\main\EvaluationM4M5-main\images\tree.png)
+![tree](C:/Users\Lucie\Desktop\github_lucie\evaluation_DUBii_m4m5\images\terminal.png)
 </center>
 ## Téléchargement des données brutes
 
@@ -108,7 +108,7 @@ Quelle est la taille de ce génome ?
 seqkit stats --threads 1 GCF_000009045.1_ASM904v1_genomic.fna
 ```
 
-La taille de ce génome est de <code>4,215,606/2 = 2,107,803</code> paires de bases.
+La taille de ce génome est de <code>4,215,606</code> paires de bases.
 
 Téléchargez l'annotation de la souche ASM904v1 de _Bacillus subtilis_ disponible à [cette adresse](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/009/045/GCF_000009045.1_ASM904v1/GCF_000009045.1_ASM904v1_genomic.gff.gz)
 
@@ -150,8 +150,8 @@ La qualité des bases vous paraît-elle satisfaisante ? Pourquoi ?
 
 car <code>la qualité moyenne par base est > 30</code> comme le montre <code> le rapport fastQC</code>
 
-Lien vers le [rapport FastQC](file:///C:/Users/Lucie/Desktop/SRR10390685_1_fastqc.html)
- [rapport FastQC](file:///C:/Users/Lucie/Desktop/SRR10390685_2_fastqc.html)
+Lien vers le [rapport FastQC](file:///C:/Users/Lucie/Desktop/github_lucie/evaluation_DUBii_m4m5/data/SRR10390685_1_fastqc.html)
+ [rapport FastQC](file:///C:/Users/Lucie/Desktop/github_lucie/evaluation_DUBii_m4m5/data/SRR10390685_2_fastqc.html)
 
 Est-ce que les reads déposés ont subi une étape de nettoyage avant d'être déposés ? Pourquoi ?
 
@@ -159,16 +159,17 @@ Est-ce que les reads déposés ont subi une étape de nettoyage avant d'être d�
 - [ ] Non
 
 car <code>la taille des reads n'est pas homogène sur l'ensemble du jeu de données pour R1: 130-151 et pour R2 : 35-151\
-Normalement, si les reads n'avaient subi aucune étape de nettoyage, il n'y aurait qu'une seul taille unique (celle du séquençage)</code>
+Normalement, si les reads n'avaient subi aucune étape de nettoyage, il n'y aurait qu'une seule taille (celle du séquençage)</code>
 
 Quelle est la profondeur de séquençage (calculée par rapport à la taille du génome de référence) ?
 
 <code>
 profondeur de séquençage = nombre de bases / taille génome \
-Ici : (7066055 *2)/4215606
+La majorité des reads font 150bp selon le rapport fastQC.\
+((7066055 * 2) * 150))/4215606
 </code>
 
-La profondeur de séquençage est de : <code>3,35</code>X.
+La profondeur de séquençage est d'environ : <code>500</code>X.
 
 ## Nettoyage des reads
 
@@ -231,7 +232,7 @@ samtools view -c -f0x4 SRR10390685_bwa_alignement.sam
 <code>747443</code> reads ne sont pas mappés.
 
 <center>
-![impression ecran terminal flagstat/idxstats](C:/Users\Lucie\Desktop\mini_projet_M4M5\main\EvaluationM4M5-main\images\terminal.png)
+![impression ecran terminal flagstat/idxstats](C:/Users\Lucie\Desktop\github_lucie\evaluation_DUBii_m4m5\images\terminal.png)
 </center>
 
 ## Croisement de données
@@ -262,13 +263,13 @@ srun samtools flagstats SRR10390685_trmNF.sort.bam > SRR10390685_trmNF.sort.bam.
 
 Utilisez <strong class="tool">IGV</strong> @igv sous [sa version en ligne](https://igv.org/app/) pour visualiser les alignements sur le gène. Faites une capture d'écran du gène entier.
 <center>
-![impression ecran terminal flagstat/idxstats](C:/Users\Lucie\Desktop\mini_projet_M4M5\main\EvaluationM4M5-main\images\igv_trmNF.png)
+![impression ecran terminal flagstat/idxstats](C:/Users\Lucie\Desktop\github_lucie\evaluation_DUBii_m4m5\images\igv_trmNF.png)
 </center>
 
 ## Aperçu final
 
 <center>
-![tree_final](C:/Users\Lucie\Desktop\mini_projet_M4M5\main\EvaluationM4M5-main\images\tree_final.png)
+![tree_final](C:/Users\Lucie\Desktop\github_lucie/evaluation_DUBii_m4m5/images/tree_final.png)
 </center>
 
 
