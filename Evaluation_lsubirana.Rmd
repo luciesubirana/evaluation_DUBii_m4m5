@@ -150,8 +150,8 @@ La qualité des bases vous paraît-elle satisfaisante ? Pourquoi ?
 
 car <code>la qualité moyenne par base est > 30</code> comme le montre <code> le rapport fastQC</code>
 
-Lien vers le [rapport FastQC](file:///C:/Users/Lucie/Desktop/github_lucie/evaluation_DUBii_m4m5/data/SRR10390685_1_fastqc.html)
- [rapport FastQC](file:///C:/Users/Lucie/Desktop/github_lucie/evaluation_DUBii_m4m5/data/SRR10390685_2_fastqc.html)
+Lien vers le [rapport FastQC](https://luciesubirana.github.io/evaluation_DUBii_m4m5.io/data/SRR10390685_1_fastqc.html )
+ [rapport FastQC](https://luciesubirana.github.io/evaluation_DUBii_m4m5.io/data/SRR10390685_2_fastqc.html )
 
 Est-ce que les reads déposés ont subi une étape de nettoyage avant d'être déposés ? Pourquoi ?
 
