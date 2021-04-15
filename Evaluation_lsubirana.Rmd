@@ -57,7 +57,7 @@ mkdir -p 01_Script 02_Output
 ```
 
 <center>
-![tree](C:/Users\Lucie\Desktop\github_lucie\evaluation_DUBii_m4m5\images\terminal.png)
+![tree](C:/Users\Lucie\Desktop\github_lucie\evaluation_DUBii_m4m5\images\tree.png)
 </center>
 ## Téléchargement des données brutes
 
@@ -193,7 +193,7 @@ Les paramètres suivants ont été choisis :
 |  \--cut_mean_quality | 30 |tri sur la qualité moyenne des reads>=30 (standard)|
 |  \--cut_window_size | 8 |fenêtre coulissante de 8 (3'->5')|
 |  \--trim_tail1 | 1 |pour supprimer la dernière base issue du dernier cycle chez Illumina, souvent de mauvaise qualité|
-|  \--length_required | 35 |taille minimale de 35pb (choix arbitraire)|
+|  \--length_required | 35 |taille minimale de 35pb; choix basé sur le rapport fastqc|
 
 Ces paramètres ont permis de conserver <code>6898098</code> reads pairés, soit une perte de <code>2,37</code>% des reads bruts.
 
